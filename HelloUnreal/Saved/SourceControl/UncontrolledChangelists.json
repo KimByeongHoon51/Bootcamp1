@@ -6,7 +6,13 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"C:/Bootcamp1/HelloUnreal/Content/StarterContent/Architecture/Floor_400x400.uasset",
-				"C:/Bootcamp1/HelloUnreal/Content/NewMap.umap"
+				"C:/Bootcamp1/HelloUnreal/Content/TAndM/AAA_Mat.uasset",
+				"C:/Bootcamp1/HelloUnreal/Content/NewMap.umap",
+				"C:/Bootcamp1/HelloUnreal/Content/TAndM/AAA_Mat_Inst.uasset",
+				"C:/Bootcamp1/HelloUnreal/Content/TAndM/AAA_Mat_Inst1.uasset",
+				"C:/Bootcamp1/HelloUnreal/Content/Blueprints/BP_Rect.uasset",
+				"C:/Bootcamp1/HelloUnreal/Content/TAndM/AAA.uasset",
+				"C:/Bootcamp1/HelloUnreal/Content/Blueprints/BP_Stairs.uasset"
 			]
 		}
 	]
