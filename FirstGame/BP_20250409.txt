@@ -1,0 +1,65 @@
+BP_20250409
+1. Task_CheckChaseDistance 만들기
+-BT에서 New Task
+
+2. Battle 상태일 때 3개 모션 중에 랜덤해서 출력
+
+3. Struct 
+-개발자는 데이터를 다룰 때 구조를 만든다.  
+-오늘은 스킬 구조를 만든다.
+-BP->Struct
+
+4. DataTable
+- 행렬로 구성된 테이블 형식의 데이터를 관리하는 도구
+- 여러 관련 데이터를 한 곳에 모아 관리하여 수정 확장이 용이
+- 일관성 유지, 외부 파일 연동
+- Struct와 세트
+- Miscellaneous->DataTable
+
+5. Miscellaneous
+-다양한 항목이나 기능을 포함하는 범주
+-DataTable 존재
+
+만들어볼 게임 <ALT F4>
+
+6. Ragdoll
+-캐릭터가 물리적으로 쓰러지는 효과를 나타내는 용어
+-자연스럽게 넘어지거나 흔들리는 효과를 내기위해 사용되는 물리 시뮬레이션 기술
+-BP_Thirdperson의 Physhics->Simulate Physics, Collison-> Ragdoll
+-캐릭터를 움직이는 것이 아니라 카메라를 움직이는 것. 캐릭터는 그냥 더미.
+-캐릭터를 움직이는 것 처럼 표현하고 싶으면 캐릭터에 카메라를 고정시킨다.
+
+7. 디버깅
+-F9(Toggle Break)
+-Debug->Blueprint Debugger->Call Stack
+-Event 위치에 닿으면 Break
+-강사님한테 묻기 전에 디버깅 하는 습관
+
+8. 넘어졌다 일어서는 애니메이션 추가
+- 가슴팍에 레이저를 쏜다고 생각
+- 넘어졌을 때 레이저가 사라지면 앞으로 쓰러진 것. 레이저가 남아있으면 뒤로 쓰러진 것.
+
+9. Montage Animation
+-여러 애니메이션 클립을 하나로 결합하고, 동적으로 재생할 수 있도록 하는 애니메이션 시스템 기능.
+Montage Slot
+-Montage는 Slot을 기준으로 실행
+
+10. LineTraceByChannel
+-특정 충돌 채널에 대해 라인을 따라 충돌 여부를 검사하여, 첫 번째로 감지된 액터나 지형 등의 정보를 반환한다.
+
+-getup시 슬라이딩 문제
+
+11. 루트 모션
+-루트 모션을 키면 Mesh가 애니메이션의 위치 값을 따라간다.
+
+-아직도 getup과 덜컹거림 존재
+
+12. 
+
+
+
+
+
+
+
+
