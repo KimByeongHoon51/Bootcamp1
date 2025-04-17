@@ -1,0 +1,47 @@
+BP20250417
+State 처리
+-최대 HP : 100
+-데미지 10 획득
+-현재 HP : 90
+-PlayerState 예시 : MaxHP, MaxMP, 힘, 민첩, 지력 ...
+-EquipState : PlayerState, Equip 변화량
+-BuffState : EquipState, Buff 변화량
+-CurState : PlayState, CurHP, CurMP
+
+1. State를 만들고 변수 추가 O
+2. DataTable 만들기 O
+3. BP_Dummy에 BP 작성 O
+4. 두 위젯 작성 O
+5. NameTagWidget Graph 작성 O
+6. SetName 함수, UpdateName 함수 작성하고 이벤트 작성
+7. BP_Dummy에 Create함수 작성
+8. Dummy와 NameTagWidget 보완
+
+현재 체력 퍼센트 만드는 법 : Cur / Max
+
+플레이어 Attack시 체력 Bar 감소 구현
+1. NameTagObjWidget에서 percent float 변수 추가 및 tag O
+2. NameTagObjWidget에서 함수 만들기 O
+3. BPI_NameTag에 함수 추가 O
+4. BP_Dummy에 함수 구현하기 (3번에 의해 Interfaces에 함수 추가 될 것) O
+5. NameTagWidget에서 BPI 함수 연결 O
+
+실습:
+Dummy에 CurHp가 0보다 작아지면 DoDeath를 실행한다.
+AI Character의 Hp가 0보다 작아지면 DoDeath를 실행한다.
+
+Rowname에 기본값 넣기!
+
+과제
+-ST_MonState에 변수 String Name, float MaxHp O
+-ST_CurMonState에 변수 ST_MonState State, float CurHp O
+-DT_Monster 테이플 ST_MonState로 생성 아래 3개 데이터 추가 O
+-0 : Name : Dummy1, MaxHp : 100 O
+-1 : Name : Dummy2, MaxHp : 200 O
+-2 : Name : Dummy3, MaxHp : 300 O
+-BP_Dummy생성시 테이블에서 RowName값으로 ST_CurMonState 셋팅 O
+-Nametag 제작 후 ST_CurMonState 값으로 Name, Hp 출력 O
+
+과제 결과
+-Dummy공격시 Hp가 줄어든다. O
+-Dummy에 Hp가 0이되면 부서진다.(Destroy Actor도 가능) O
