@@ -1,0 +1,25 @@
+BP_20250418
+
+어떤 오브젝트의 Death 처리 할때는 함수를 이용해라.
+
+1. IsDeath 만들기 -> pure 처리
+2. AddDamage 함수 수정
+3. UpdateHp 함수 만들고 AddDamage에 UpdateHp 함수 추가 -> AddDamage끝
+4. UpdateName 함수 만들기. 
+
+Weapon 줍기
+
+Flail
+Switch Box, Button
+Doorframe, Door
+-SM 만들고 BP 만들기
+-PhysicsConstraint 설정
+
+주말에 새로운 프로젝트
+프로젝트 이름: LastTest
+
+
+
+
+
+
