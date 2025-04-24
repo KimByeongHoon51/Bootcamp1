@@ -1,0 +1,38 @@
+BP로 뱀서만들기
+
+1. 카메라 셋팅, Skill 테이블 작업
+-BP_Wizard에서 CameraInput, Jump 지우기
+-Camera Boom에서 SocketOffset 값 변경으로 카메라 위치 변경
+-Follow Camera 회전
+-카메라 세팅 끝
+
+-Structure로 ST_Skill 만들기
+-Name, SpawnActor, CoolTime 추가  -> 끝
+-DataTable로 DT_Skill 만들기
+
+2. SkillComponent 작업, Slash Skill
+-BP_Slash 만들기
+-Component로 Niagara particle system 추가
+-DT에 Slash 작성 -> 끝
+-BP에 ActorComponent로 BP_SkillMgr 만들기
+-BP_SkillMgr에 함수 DoUseSkill 작성
+-ST_CurrentSkill 만들기
+-BP_SkillMgr에 함수 AddSkill 작성
+-변수 Skills 만들고 배열로 바꾸기
+-함수 UpdateSkills 작성
+-함수 UpdateSkillCoolTime 작성
+-BP_Wizard에 함수 AddSkill 연결 
+-캐릭터가 움직일 때 Skill이 캐릭터 뒤에 나타나는 문제 발생
+-BP_Slash의 EventGrahp에 Get Instigator 작성 -> 문제 해결
+
+3. Projectile Skill, Aura Skill
+4. Monster Actor, Monster Table 작업
+5. Monster Spawn 작업
+6. Monster AI
+7. Nametag Widget 작업
+8. Monster Status 작업
+9. Skill Damage 작업
+10. Projectile, Aura Skill Damage
+11. Monster Death 처리
+12. Player State Hp 작업
+13. HudWidget GameOver 처리

@@ -1,0 +1,28 @@
+BP_20250423
+25일 테스트. 평가 내용은 지금 만드는 거. 1시부터
+
+파이어볼 만들기
+1. BP_Wizard에 SpringArm과 Camera 세팅
+2. ST_Skill, ST_CurSkill, DT_Skill, BP_FireBall 작성
+3. ActorComeponent 작성. BP_Wizard에 component추가.
+4. BP_SkillMgr 작성
+
+스킬 추가하는 방법
+BP_Slash
+
+과제: BP_RotationBall
+10초마다 스킬 발사
+스킬이 발사되면 5초 동안 캐릭터 주위를 돌다가 사라짐 -> 반복
+
+
+Wizard의 event beginplay에 스킬 연결
+
+AI -> Child -> DataTable -> Spawn
+
+
+
+
+
+
+
+ 
